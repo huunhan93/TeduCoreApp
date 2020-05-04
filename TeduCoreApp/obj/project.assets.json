@@ -5028,6 +5028,65 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "TeduCoreApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "TeduCoreApp.Data": "1.0.0",
+          "TeduCoreApp.Data.EF": "1.0.0",
+          "TeduCoreApp.Utilities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TeduCoreApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeduCoreApp.Application.dll": {}
+        }
+      },
+      "TeduCoreApp.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TeduCoreApp.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeduCoreApp.Data.dll": {}
+        }
+      },
+      "TeduCoreApp.Data.EF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "TeduCoreApp.Infrastructure": "1.0.0",
+          "TeduCoreApp.Utilities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TeduCoreApp.Data.EF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeduCoreApp.Data.EF.dll": {}
+        }
+      },
+      "TeduCoreApp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TeduCoreApp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeduCoreApp.Infrastructure.dll": {}
+        }
+      },
+      "TeduCoreApp.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TeduCoreApp.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeduCoreApp.Utilities.dll": {}
+        }
       }
     }
   },
@@ -13635,6 +13694,31 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "TeduCoreApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../TeduCoreApp.WebApplication/TeduCoreApp.Application.csproj",
+      "msbuildProject": "../TeduCoreApp.WebApplication/TeduCoreApp.Application.csproj"
+    },
+    "TeduCoreApp.Data/1.0.0": {
+      "type": "project",
+      "path": "../TeduCoreApp.Data/TeduCoreApp.Data.csproj",
+      "msbuildProject": "../TeduCoreApp.Data/TeduCoreApp.Data.csproj"
+    },
+    "TeduCoreApp.Data.EF/1.0.0": {
+      "type": "project",
+      "path": "../TeduCoreApp.Data.EF/TeduCoreApp.Data.EF.csproj",
+      "msbuildProject": "../TeduCoreApp.Data.EF/TeduCoreApp.Data.EF.csproj"
+    },
+    "TeduCoreApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TeduCoreApp.Infratructure/TeduCoreApp.Infrastructure.csproj",
+      "msbuildProject": "../TeduCoreApp.Infratructure/TeduCoreApp.Infrastructure.csproj"
+    },
+    "TeduCoreApp.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../TeduCoreApp.Utilities/TeduCoreApp.Utilities.csproj",
+      "msbuildProject": "../TeduCoreApp.Utilities/TeduCoreApp.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13642,7 +13726,12 @@
       "Microsoft.AspNetCore.All >= 2.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4",
+      "TeduCoreApp.Application >= 1.0.0",
+      "TeduCoreApp.Data >= 1.0.0",
+      "TeduCoreApp.Data.EF >= 1.0.0",
+      "TeduCoreApp.Infrastructure >= 1.0.0",
+      "TeduCoreApp.Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13652,11 +13741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NHAN-TTCNTT\\Documents\\3-LapTrinh\\NetCore\\Tedu\\TeduCoreApp\\TeduCoreApp\\TeduCoreApp\\TeduCoreApp.csproj",
+      "projectUniqueName": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp\\TeduCoreApp.csproj",
       "projectName": "TeduCoreApp",
-      "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\3-LapTrinh\\NetCore\\Tedu\\TeduCoreApp\\TeduCoreApp\\TeduCoreApp\\TeduCoreApp.csproj",
+      "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp\\TeduCoreApp.csproj",
       "packagesPath": "C:\\Users\\NHAN-TTCNTT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\3-LapTrinh\\NetCore\\Tedu\\TeduCoreApp\\TeduCoreApp\\TeduCoreApp\\obj\\",
+      "outputPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13674,7 +13763,23 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Data.EF\\TeduCoreApp.Data.EF.csproj": {
+              "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Data.EF\\TeduCoreApp.Data.EF.csproj"
+            },
+            "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj": {
+              "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Data\\TeduCoreApp.Data.csproj"
+            },
+            "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Infratructure\\TeduCoreApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Infratructure\\TeduCoreApp.Infrastructure.csproj"
+            },
+            "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj": {
+              "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj"
+            },
+            "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.WebApplication\\TeduCoreApp.Application.csproj": {
+              "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.WebApplication\\TeduCoreApp.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "TeduCoreApp.Application/1.0.0": {
+        "dependencies": {
+          "TeduCoreApp.Data": "1.0.0",
+          "TeduCoreApp.Data.EF": "1.0.0",
+          "TeduCoreApp.Utilities": "1.0.0"
+        },
+        "runtime": {
+          "TeduCoreApp.Application.dll": {}
+        }
+      },
+      "TeduCoreApp.Data/1.0.0": {
+        "runtime": {
+          "TeduCoreApp.Data.dll": {}
+        }
+      },
+      "TeduCoreApp.Data.EF/1.0.0": {
+        "dependencies": {
+          "TeduCoreApp.Infrastructure": "1.0.0",
+          "TeduCoreApp.Utilities": "1.0.0"
+        },
+        "runtime": {
+          "TeduCoreApp.Data.EF.dll": {}
+        }
+      },
+      "TeduCoreApp.Infrastructure/1.0.0": {
+        "runtime": {
+          "TeduCoreApp.Infrastructure.dll": {}
+        }
+      },
+      "TeduCoreApp.Utilities/1.0.0": {
+        "runtime": {
+          "TeduCoreApp.Utilities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TeduCoreApp.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeduCoreApp.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeduCoreApp.Data.EF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeduCoreApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TeduCoreApp.Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
