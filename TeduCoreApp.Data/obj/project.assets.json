@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "TeduCoreApp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TeduCoreApp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TeduCoreApp.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -668,11 +678,17 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "TeduCoreApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TeduCoreApp.Infratructure/TeduCoreApp.Infrastructure.csproj",
+      "msbuildProject": "../TeduCoreApp.Infratructure/TeduCoreApp.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "TeduCoreApp.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -704,7 +720,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Infratructure\\TeduCoreApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Infratructure\\TeduCoreApp.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
