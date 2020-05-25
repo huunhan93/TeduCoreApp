@@ -14,3 +14,5 @@ C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Data.EF\obj\Debu
 C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Data.EF\obj\Debug\netcoreapp2.0\TeduCoreApp.Data.EF.pdb
 C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Data.EF\bin\Debug\netcoreapp2.0\TeduCoreApp.Data.EF.runtimeconfig.json
 C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Data.EF\bin\Debug\netcoreapp2.0\TeduCoreApp.Data.EF.runtimeconfig.dev.json
+C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Data.EF\bin\Debug\netcoreapp2.0\TeduCoreApp.Data.dll
+C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Data.EF\bin\Debug\netcoreapp2.0\TeduCoreApp.Data.pdb
