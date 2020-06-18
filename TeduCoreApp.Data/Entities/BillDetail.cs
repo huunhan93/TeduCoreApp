@@ -11,28 +11,48 @@ namespace TeduCoreApp.Data.Entities
     {
         public BillDetail() { }
 
-        public int BillId { get; set; }
+        public BillDetail(int id, int billId, int productId, int quantity, decimal price, int colorId, int sizeId)
+        {
+            Id = id;
+            BillId = billId;
+            ProductId = productId;
+            Quantity = quantity;
+            Price = price;
+            ColorId = colorId;
+            SizeId = sizeId;
+        }
 
-        public int ProductId { get; set; }
+        public BillDetail(int billId, int productId, int quantity, decimal price, int colorId, int sizeId)
+        {
+            BillId = billId;
+            ProductId = productId;
+            Quantity = quantity;
+            Price = price;
+            ColorId = colorId;
+            SizeId = sizeId;
+        }
+        public int BillId { set; get; }
 
-        public int Quantity { get; set; }
+        public int ProductId { set; get; }
 
-        public Decimal Price { get; set; }
+        public int Quantity { set; get; }
+
+        public decimal Price { set; get; }
 
         public int ColorId { get; set; }
 
         public int SizeId { get; set; }
 
         [ForeignKey("BillId")]
-        public virtual Bill Bill { get; set; }
+        public virtual Bill Bill { set; get; }
 
         [ForeignKey("ProductId")]
-        public virtual Product Product { get; set; }
+        public virtual Product Product { set; get; }
 
         [ForeignKey("ColorId")]
-        public virtual Color Color { get; set; }
+        public virtual Color Color { set; get; }
 
         [ForeignKey("SizeId")]
-        public virtual Size Size { get; set; }
+        public virtual Size Size { set; get; }
     }
 }

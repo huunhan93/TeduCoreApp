@@ -7,6 +7,6 @@ namespace TeduCoreApp.Data.Interfaces
 {
     public interface ISwitchable
     {
-        Status Status { set; get; } 
+        Status Status { set; get; }
     }
 }

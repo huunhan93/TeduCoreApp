@@ -1,8 +1,0 @@
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\bin\Debug\netcoreapp2.2\TeduCoreApp.Utilities.deps.json
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\bin\Debug\netcoreapp2.2\TeduCoreApp.Utilities.dll
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\bin\Debug\netcoreapp2.2\TeduCoreApp.Utilities.pdb
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\obj\Debug\netcoreapp2.2\TeduCoreApp.Utilities.csproj.CoreCompileInputs.cache
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\obj\Debug\netcoreapp2.2\TeduCoreApp.Utilities.AssemblyInfoInputs.cache
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\obj\Debug\netcoreapp2.2\TeduCoreApp.Utilities.AssemblyInfo.cs
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\obj\Debug\netcoreapp2.2\TeduCoreApp.Utilities.dll
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Utilities\obj\Debug\netcoreapp2.2\TeduCoreApp.Utilities.pdb

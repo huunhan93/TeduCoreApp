@@ -8,9 +8,10 @@ using TeduCoreApp.Infrastructure.SharedKernel;
 namespace TeduCoreApp.Data.Entities
 {
     [Table("Footers")]
-    public class Footer : DomainEntity<String>
+    public class Footer : DomainEntity<string>
     {
+
         [Required]
-        public string Content { get; set; }
+        public string Content { set; get; }
     }
 }

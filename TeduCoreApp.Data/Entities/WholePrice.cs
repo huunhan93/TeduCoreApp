@@ -9,6 +9,7 @@ namespace TeduCoreApp.Data.Entities
     [Table("WholePrices")]
     public class WholePrice : DomainEntity<int>
     {
+        
         public int ProductId { get; set; }
 
         public int FromQuantity { get; set; }

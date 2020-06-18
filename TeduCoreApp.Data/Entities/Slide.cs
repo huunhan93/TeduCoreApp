@@ -1,36 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using TeduCoreApp.Data.Enums;
-using TeduCoreApp.Data.Interfaces;
 using TeduCoreApp.Infrastructure.SharedKernel;
 
 namespace TeduCoreApp.Data.Entities
 {
     [Table("Slides")]
-    public class Slide : DomainEntity<int>, 
-        ISortable, ISwitchable
+    public class Slide : DomainEntity<int>
     {
+        [StringLength(250)]
         [Required]
-        [MaxLength(256)]
-        public string Name { get; set; }
+        public string Name { set; get; }
 
-        [MaxLength(250)]
-        public string Description { get; set; }
+        [StringLength(250)]
+        public string Description { set; get; }
 
-        [MaxLength(256)]
-        public string Url { get; set; }
-
-        [MaxLength(256)]
+        [StringLength(250)]
         [Required]
-        public string Image { get; set; }
+        public string Image { set; get; }
 
-        public int SortOrder { get; set; }
+        [StringLength(250)]
+        public string Url { set; get; }
 
-        [DefaultValue(Status.Active)]
-        public Status Status { get; set; }
+        public int? DisplayOrder { set; get; }
+
+        public bool Status { set; get; }
+
+        public string Content { set; get; }
+
+        [StringLength(25)]
+        [Required]
+        public string GroupAlias { get; set; }
     }
 }

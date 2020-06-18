@@ -10,23 +10,45 @@ using TeduCoreApp.Infrastructure.SharedKernel;
 namespace TeduCoreApp.Data.Entities
 {
     [Table("Functions")]
-    public class Function : DomainEntity<string>
-        ,ISwitchable, ISortable
+    public class Function : DomainEntity<string>, ISwitchable, ISortable
     {
+        public Function()
+        {
+
+        }
+        public Function(string id, string name, string url, string parentId, string iconCss, int sortOrder)
+        {
+            this.Id = id;
+            this.Name = name;
+            this.URL = url;
+            this.ParentId = parentId;
+            this.IconCss = iconCss;
+            this.SortOrder = sortOrder;
+            this.Status = Status.Active;
+        }
+        public Function(string name,string url,string parentId,string iconCss,int sortOrder)
+        {
+            this.Name = name;
+            this.URL = url;
+            this.ParentId = parentId;
+            this.IconCss = iconCss;
+            this.SortOrder = sortOrder;
+            this.Status = Status.Active;
+        }
         [Required]
         [StringLength(128)]
-        public string Name { get; set; }
+        public string Name { set; get; }
 
         [Required]
         [StringLength(250)]
-        public string Url { get; set; }
+        public string URL { set; get; }
+
 
         [StringLength(128)]
-        public string ParentId { get; set; }
+        public string ParentId { set; get; }
 
-        [StringLength(20)]
         public string IconCss { get; set; }
-        public Status Status { get; set; }
-        public int SortOrder { get; set; }
+        public int SortOrder { set; get; }
+        public Status Status { set; get; }
     }
 }

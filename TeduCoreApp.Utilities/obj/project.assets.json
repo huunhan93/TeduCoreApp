@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj",
+      "projectUniqueName": "C:\\Users\\NHAN-TTCNTT\\Documents\\3-LapTrinh\\NetCore\\Tedu\\teducoreapp-lesson15\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj",
       "projectName": "TeduCoreApp.Utilities",
-      "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj",
+      "projectPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\3-LapTrinh\\NetCore\\Tedu\\teducoreapp-lesson15\\TeduCoreApp.Utilities\\TeduCoreApp.Utilities.csproj",
       "packagesPath": "C:\\Users\\NHAN-TTCNTT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\4-Github\\TeduCoreApp\\TeduCoreApp.Utilities\\obj\\",
+      "outputPath": "C:\\Users\\NHAN-TTCNTT\\Documents\\3-LapTrinh\\NetCore\\Tedu\\teducoreapp-lesson15\\TeduCoreApp.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -10,19 +10,31 @@ namespace TeduCoreApp.Data.Entities
     [Table("Permissions")]
     public class Permission : DomainEntity<int>
     {
-        [StringLength(450)]
-        [Required]
-        public string RoleId { get; set; }
+        public Permission() { }
+        public Permission(Guid roleId, string functionId, bool canCreate, bool canRead,
+            bool canUpdate, bool canDelete)
+        {
+            this.RoleId = roleId;
+            this.FunctionId = functionId;
+            this.CanCreate = canCreate;
+            this.CanRead = canRead;
+            this.CanUpdate = canUpdate;
+            this.CanDelete = canDelete;
+        }
 
+        [Required]
+        public Guid RoleId { get; set; }
+
+        [StringLength(128)]
+        [Required]
         public string FunctionId { get; set; }
 
-        public bool CanCreate { get; set; }
+        public bool CanCreate { set; get; }
+        public bool CanRead { set; get; }
 
-        public bool CanRead { get; set; }
+        public bool CanUpdate { set; get; }
+        public bool CanDelete { set; get; }
 
-        public bool CanUpdate { get; set; }
-
-        public bool CanDelete { get; set; }
 
         [ForeignKey("RoleId")]
         public virtual AppRole AppRole { get; set; }

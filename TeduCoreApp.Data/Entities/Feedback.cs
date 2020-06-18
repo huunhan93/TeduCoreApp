@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
@@ -11,27 +10,21 @@ using TeduCoreApp.Infrastructure.SharedKernel;
 namespace TeduCoreApp.Data.Entities
 {
     [Table("Feedbacks")]
-    public class Feedback : DomainEntity<int>,
-        IDateTracking, ISwitchable
+    public class Feedback : DomainEntity<int>,ISwitchable, IDateTracking
     {
-        public Feedback() { }
 
+        [StringLength(250)]
         [Required]
-        [StringLength(256)]
-        public string Name { get; set; }
+        public string Name { set; get; }
 
-        [Required]
-        [StringLength(256)]
-        public string Email { get; set; }
+        [StringLength(250)]
+        public string Email { set; get; }
 
-        
         [StringLength(500)]
-        public string Messgae { get; set; }
+        public string Message { set; get; }
 
-        public DateTime DateCreated { get; set; }
-        public DateTime DateModified { get; set; }
-
-        [DefaultValue(Status.Active)]
-        public Status Status { get; set; }
+        public Status Status { set; get; }
+        public DateTime DateCreated { set; get; }
+        public DateTime DateModified { set; get; }
     }
 }

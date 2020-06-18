@@ -14,7 +14,6 @@ namespace TeduCoreApp.Data.Entities
         {
 
         }
-
         public AppRole(string name, string description) : base(name)
         {
             this.Description = description;

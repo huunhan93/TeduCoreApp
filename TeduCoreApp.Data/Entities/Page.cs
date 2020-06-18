@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
@@ -11,22 +10,17 @@ using TeduCoreApp.Infrastructure.SharedKernel;
 namespace TeduCoreApp.Data.Entities
 {
     [Table("Pages")]
-    public class Page : DomainEntity<int>,
-        ISwitchable
+    public class Page : DomainEntity<int>,ISwitchable
     {
-        public Page() { }
-
-        [Required]
-        [StringLength(256)]
-        public string Name { get; set; }
-
         [Required]
         [MaxLength(256)]
-        public string Alias { get; set; }
+        public string Name { set; get; }
 
-        public string Content { get; set; }
+        [MaxLength(256)]
+        [Required]
+        public string Alias { set; get; }
 
-        [DefaultValue(Status.Active)]
+        public string Content { set; get; }
         public Status Status { set; get; }
     }
 }

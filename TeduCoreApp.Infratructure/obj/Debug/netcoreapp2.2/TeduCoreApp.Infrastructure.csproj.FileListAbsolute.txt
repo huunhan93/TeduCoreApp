@@ -1,8 +1,0 @@
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\bin\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.deps.json
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\bin\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.dll
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\bin\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.pdb
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\obj\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\obj\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\obj\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.AssemblyInfo.cs
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\obj\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.dll
-C:\Users\NHAN-TTCNTT\Documents\4-Github\TeduCoreApp\TeduCoreApp.Infratructure\obj\Debug\netcoreapp2.2\TeduCoreApp.Infrastructure.pdb

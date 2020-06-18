@@ -10,26 +10,28 @@ using TeduCoreApp.Infrastructure.SharedKernel;
 namespace TeduCoreApp.Data.Entities
 {
     [Table("Announcements")]
-    public class Announcement : DomainEntity<string>,
-        ISwitchable, IDateTracking
+    public class Announcement  : DomainEntity<string>,ISwitchable,IDateTracking
     {
-        public Announcement() { }
+        public Announcement()
+        {
+            AnnouncementUsers = new List<AnnouncementUser>();
+        }
 
         [Required]
-        [StringLength(256)]
-        public string Title { get; set; }
+        [StringLength(250)]
+        public string Title { set; get; }
 
-        [StringLength(256)]
-        public string Content { get; set; }
+        [StringLength(250)]
+        public string Content { set; get; }
 
-        [StringLength(450)]
-        public Guid UserId { get; set; }
+        public Guid UserId { set; get; }
 
         [ForeignKey("UserId")]
         public virtual AppUser AppUser { get; set; }
 
-        public Status Status { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime DateCreated { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime DateModified { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public virtual ICollection<AnnouncementUser> AnnouncementUsers { get; set; }
+        public DateTime DateCreated { set; get; }
+        public DateTime DateModified { set; get; }
+        public Status Status { set; get; }
     }
 }

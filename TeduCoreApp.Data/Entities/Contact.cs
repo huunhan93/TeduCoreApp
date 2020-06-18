@@ -1,42 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using TeduCoreApp.Data.Enums;
-using TeduCoreApp.Data.Interfaces;
 using TeduCoreApp.Infrastructure.SharedKernel;
 
 namespace TeduCoreApp.Data.Entities
 {
-    [Table("Caontacts")]
-    public class Contact : DomainEntity<int>,
-        ISwitchable
+    [Table("ContactDetails")]
+    public class Contact : DomainEntity<string>
     {
-        [Required]
-        [StringLength(256)]
-        public string Name { get; set; }
 
         [StringLength(250)]
-        public string Address { get; set; }
+        [Required]
+        public string Name { set; get; }
 
         [StringLength(50)]
-        public string Phone { get; set; }
+        public string Phone { set; get; }
 
         [StringLength(250)]
-        public string Website { get; set; }
+        public string Email { set; get; }
 
         [StringLength(250)]
-        public string Email { get; set; }
+        public string Website { set; get; }
 
-        public string Other { get; set; }
+        [StringLength(250)]
+        public string Address { set; get; }
 
-        public double? Lng { get; set; }
+        public string Other { set; get; }
 
-        public double? Lat { get; set; }
+        public double? Lat { set; get; }
 
-        [DefaultValue(Status.Active)]
-        public Status Status { get; set; }
+        public double? Lng { set; get; }
+
+        public Status Status { set; get; }
     }
 }

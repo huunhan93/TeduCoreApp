@@ -12,11 +12,11 @@ namespace TeduCoreApp.Data.EF
     public class EFRepository<T, K> : IRepository<T, K>, IDisposable where T : DomainEntity<K>
     {
         private readonly AppDbContext _context;
+
         public EFRepository(AppDbContext context)
         {
             _context = context;
         }
-
         public void Add(T entity)
         {
             _context.Add(entity);
@@ -24,7 +24,7 @@ namespace TeduCoreApp.Data.EF
 
         public void Dispose()
         {
-            if (_context != null)
+          if(_context != null)
             {
                 _context.Dispose();
             }
@@ -55,16 +55,17 @@ namespace TeduCoreApp.Data.EF
             }
             return items.Where(predicate);
         }
+
+        public T FindById(K id, params Expression<Func<T, object>>[] includeProperties)
+        {
+            return FindAll(includeProperties).SingleOrDefault(x => x.Id.Equals(id));
+        }
+
         public T FindSingle(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
         {
             return FindAll(includeProperties).SingleOrDefault(predicate);
         }
 
-        public T FindbyId(K id, params Expression<Func<T, object>>[] includeProperties)
-        {
-            return FindAll(includeProperties).SingleOrDefault(x => x.Id.Equals(id));
-        }
-        
         public void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
@@ -72,7 +73,7 @@ namespace TeduCoreApp.Data.EF
 
         public void Remove(K id)
         {
-            Remove(FindbyId(id));
+            Remove(FindById(id));
         }
 
         public void RemoveMultiple(List<T> entities)
